@@ -2,7 +2,7 @@
 
 ## Overview
 
-MediCo is a web-based healthcare platform designed to bridge rural communities with essential medical services. It enables seamless interaction between patients, doctors, and pharmacies, allowing users to book appointments, order medications, and access healthcare services from anywhere.
+MediCo is a web-based healthcare platform designed to bridge rural communities with essential medical services. It enables seamless interaction between patients, doctors, and pharmacies, allowing users to book appointments, order medications, manage their healthcare efficiently, and access health information through education resources and symptom checking tools.
 
 ## Features
 
@@ -11,6 +11,8 @@ MediCo is a web-based healthcare platform designed to bridge rural communities w
 - **Pharmacy Integration**: Order medications online with delivery options
 - **Appointment Booking**: Convenient scheduling system for healthcare services
 - **User Authentication**: Secure login and registration for all users
+- **Health Education**: Access comprehensive health information and educational resources
+- **Symptom Checker**: Identify potential health conditions based on symptoms
 - **Responsive Design**: Mobile-friendly interface for accessibility
 
 ## Tech Stack
@@ -19,18 +21,49 @@ MediCo is a web-based healthcare platform designed to bridge rural communities w
 - **Backend**: Python (34.1%)
 - **Framework**: Flask (web framework)
 - **Database**: SQL-based storage
+- **Architecture**: MVC (Model-View-Controller)
+
+## Architecture
+
+MediCo follows the **MVC (Model-View-Controller)** architecture pattern:
+
+### Model Layer
+- User, Doctor, Patient, and Appointment models
+- Medication and Pharmacy data models
+- Health education and symptom checker data models
+- Database interactions and business logic
+
+### View Layer
+- HTML templates for patient portal
+- Doctor management interface
+- Pharmacy interface
+- Health education portal
+- Symptom checker interface
+- User authentication pages
+
+### Controller Layer
+- User authentication controller
+- Appointment booking controller
+- Pharmacy order controller
+- Doctor schedule management controller
+- Health education controller
+- Symptom checker controller
 
 ## Project Structure
 
 ```
 Final-Project-Medico/
 ├── app.py                 # Main Flask application
+├── models/               # MVC Model layer
+├── controllers/          # MVC Controller layer
+├── views/               # MVC View layer (templates)
 ├── static/
 │   └── CSS/              # Stylesheet files
 ├── templates/            # HTML templates
 ├── database/             # Database configurations
 └── README.md
 ```
+
 ## Usage
 
 ### For Patients
@@ -38,7 +71,9 @@ Final-Project-Medico/
 2. Browse available doctors and their schedules
 3. Book an appointment at your preferred time
 4. Order medications through the pharmacy section
-5. Track your appointments and orders
+5. Access health education resources
+6. Use the symptom checker tool for health concerns
+7. Track your appointments and orders
 
 ### For Doctors
 1. Log in to your doctor account
@@ -64,10 +99,23 @@ Final-Project-Medico/
 - Secure ordering process
 - Delivery tracking
 
+### Health Education
+- Comprehensive medical information
+- Health tips and guidelines
+- Disease prevention resources
+- Wellness articles and guides
+
+### Symptom Checker
+- User-friendly symptom identification tool
+- Potential condition suggestions
+- Medical information for identified symptoms
+- Recommendation to consult doctors
+
 ### User Profiles
 - Manage personal health information
 - View appointment history
 - Track medication orders
+- Access symptom checker history
 
 ## Database
 
@@ -76,6 +124,8 @@ The application uses a SQL-based database to store:
 - Appointment schedules
 - Medication inventory
 - Order history
+- Health education content
+- Symptom checker data and history
 
 ## Security Features
 
@@ -104,5 +154,3 @@ This project is open source and available for educational purposes.
 
 **Ashraful Alam**  
 GitHub: [@AshrafulAlam07](https://github.com/AshrafulAlam07)
-
-
