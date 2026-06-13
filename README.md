@@ -31,28 +31,6 @@ Final-Project-Medico/
 ├── database/             # Database configurations
 └── README.md
 ```
-
-## Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/AshrafulAlam07/Final-Project-Medico.git
-   cd Final-Project-Medico
-   ```
-
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Run the application**
-   ```bash
-   python app.py
-   ```
-
-4. **Access the platform**
-   - Open your browser and navigate to `http://localhost:5000`
-
 ## Usage
 
 ### For Patients
@@ -127,11 +105,4 @@ This project is open source and available for educational purposes.
 **Ashraful Alam**  
 GitHub: [@AshrafulAlam07](https://github.com/AshrafulAlam07)
 
-## Contact
 
-For questions or support, please reach out through the GitHub repository.
-
----
-
-**Created**: August 2025  
-**Last Updated**: August 2025
